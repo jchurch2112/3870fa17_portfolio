@@ -1,4 +1,4 @@
-body{background-color:#656565;
+body{background:yellow;
     /* background-image:url("../img/beach.gif");
      background-size:100% 100%;
      background-repeat:no-repeat;
@@ -8,7 +8,8 @@ body{background-color:#656565;
 .mainnavigation, .mainnavigation li{border:none;
                 background-color:red;
                 display:inline;
-                font-size:24px;}
+                font-size:24px;
+                display: inline-block;}
 .subnavigation{border:none;
                background-color:red;
                font-size:24px;
@@ -20,7 +21,6 @@ a:hover{color:white;
 
 .photo{background-color:none;
        position:relative;}
-.ozzy{margin-left:130px;}
+.beach{background-color:blue;}
 
 footer{background-color:blue;}
-.tealbg{background-color: teal;}
