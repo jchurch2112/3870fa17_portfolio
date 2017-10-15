@@ -1,3 +1,15 @@
+a li, li:hover{font-family: 'Permanent Marker', cursive;
+      list-style:none;
+      color:black;
+      text-decoration:underline;
+      }
+li{font-family: 'Permanent Marker', cursive;
+      list-style:none;
+      color:black;}
+a{color:white;}
+h1{font-family: 'Luckiest Guy', cursive;}
+p{font-family:cursive;
+  font-size:20px;}
 body{background-color:#656565;
     /* background-image:url("../img/beach.gif");
      background-size:100% 100%;
@@ -5,22 +17,34 @@ body{background-color:#656565;
      background-attachment:static;
      background-position: center;*/}
 
-.mainnavigation, .mainnavigation li{border:none;
-                background-color:red;
+.mainnavigation{border:solid black 3px;
+                background-color:#7c0000;
                 display:inline;
-                font-size:24px;}
-.subnavigation{border:none;
-               background-color:red;
+                font-size:32px;
+                font-family: 'Permanent Marker', cursive;
+                text-align:center;
+                word-spacing:100px;}
+.subnavigation{border:solid black 3px;
+               background-color:white;
                font-size:24px;
-               height:250px;}
+               height:250px;
+              float: right;
+              margin-top:15px;}
 a:hover{color:white;
         background-color:black;
-        background:black;}
+        background:#656565;}
 
 
-.photo{background-color:none;
-       position:relative;}
-.ozzy{margin-left:130px;}
+.photo{background-color:solid black 3px;
+       position:relative;
+      border: none;}
+.top {margin-bottom: 25px;}
 
-footer{background-color:blue;}
-.tealbg{background-color: teal;}
+
+footer{border:solid black 3px;
+      background-color:#7c0000;
+      margin-bottom:15px;
+      margin-top: 25px;}
+.footer{font-size:32px;
+         color:white;}
+      
