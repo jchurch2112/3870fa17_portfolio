@@ -7,6 +7,7 @@
     <title>Foundation for Sites</title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Permanent+Marker" rel="stylesheet">
   </head>
   <body>
     <div class="grid-container">
@@ -16,38 +17,66 @@
         </div>
       </div>
       <div>
-        <script>document.write("<h3>Welcome!</h3>")</script>
+        <script type="text/javascript">
+          var today = new Date();
+          var hourNow = today.getHours();
+          var greeting;
+
+          if (hourNow > 18){greeting = 'Good evening!';}
+          else if (hourNow > 12){greeting = 'Good afternoon';}
+          else if (hourNow > 0){greeting = 'Good morning';}
+          else{greeting = 'Welcome!';}
+          document.write('<h3>' + greeting + '</h3>');
+        </script>
       </div>
 
       <div class="grid-x grid-padding-x">
 
 
           <div class="mainnavigation small-12 cell">
-            <ul class="large-12 cell">
-               <a href="index.html"><li>Home</li></a>
-               <a href="portfolio.html"><li>Portfolio</li></a>
-               <a href="about.html"><li>About</li></a>
-            </ul>
+            <div class="side large-12 cell">
+               <a href="index.html">Home</a>
+               <a href="portfolio.html">Gallery</a>
+               <a href="about.html">About</a>
+            </div>
           </div>
 
-          <div class="photo large-6  small-6 cell">
-            <img class="ozzy large-4" src="img/ozzy2.jpg"></img>
+          <div class="subnavigation large-3 cell">
 
+            <ul>
+               <li>Jesse and Ozzy</li>
+               <li>Project Tom</li>
+               <li>Personal Stuff</li>
+               <li>Scraps</li>
+             </ul>
           </div>
-             <div class="subnavigation large-3 cell">
 
-               <ul>
-                  <a href="something.html"><li>Jesse and Ozzy</li></a>
-                  <a href="something.html"><li>Project Tom</li></a>
-                  <a href="something.html"><li>Personal Stuff</li></a>
-                  <a href="something.html"><li>Scraps</li></a>
-                </ul>
-             </div>
+          <div class="photo large-6  medium-6 cell">
+            <h1>Animation</h1>
+            <p>This site will eventually show off my interest in animation. Most of the images shown on this site belong to me. Feel free to look around, and see what you like.</p>
+            <p>For the most part, this site is to show off my style and what I am capable of doing. Most of the movies and gifs shown here are still in the creating process.</p>
+            <script type="text/javascript">
+          var day = new Date();
+          var today = day.getDay();
+          var hour = day.getHours();
+          var minutes = day.getMinutes();
+
+          if (hourNow > 18){document.write('<img src="img/sleeping.png">');}
+            
+          else if (hourNow > 12){document.write('<img src="img/awake.png">');}
+            
+          else if (hourNow > 7){document.write('<img src="img/awake.png">');}
+            
+          else
+          document.write('<img src="img/awake.png">');
+        </script>
+          </div>
 
 
 
 
-      </div>
+
+      
 
 
     </div>
@@ -58,12 +87,15 @@
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
-  </body>
+
+
   <footer>
-      <div class="grid-x grid-padding-x">
-        <div>
-          <p class="large-12 cell">Joseph "Joey" Church</p>
+      
+        <div class="small-12 cell">
+          <p class="footer">&copy; Joseph "Joey" Church</p>
         </div>
-      </div>
+      
   </footer>
+  </div>
+  </body>
 </html>
